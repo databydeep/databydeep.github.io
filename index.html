@@ -1,14 +1,104 @@
 <!doctype html>
-<html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Deep Mehta — Data &amp; AI Engineering</title>
-<style>
-:root{--ink:#191a19;--paper:#fafaf7;--line:#ccccca}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 system-ui,sans-serif}main,header,footer{max-width:1120px;margin:auto;padding:0 clamp(20px,5vw,72px)}nav,footer{display:flex;align-items:center;justify-content:space-between;gap:18px}nav{padding:20px 0;border-bottom:1px solid var(--ink)}nav strong{font:italic bold 30px Georgia,serif}a{color:inherit;text-underline-offset:4px}nav div,.links{display:flex;flex-wrap:wrap;gap:18px}nav a{font-size:14px}.hero{padding:clamp(45px,9vw,105px) 0 50px}.small,time{font:12px/1.5 ui-monospace,monospace;letter-spacing:.055em}.hero h1{font:normal clamp(64px,12vw,150px)/.98 Georgia,serif;letter-spacing:-.07em;margin:16px 0 20px}.hero p{max-width:620px;font-size:clamp(18px,2.3vw,25px);line-height:1.45}.button{display:inline-block;background:var(--ink);color:white;text-decoration:none;padding:10px 17px;border-radius:4px}.links{align-items:center}.feature{background:var(--ink);color:white;padding:clamp(24px,5vw,55px);border-radius:8px}.feature h2,section>h2{font:normal clamp(33px,4.7vw,58px)/1.1 Georgia,serif;letter-spacing:-.035em;margin:12px 0 18px}.feature p{max-width:720px;color:#e4e4df}.stats,.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.stats{margin-top:28px}.stats div{border-top:1px solid #777;padding-top:10px}.stats b{display:block;font:normal clamp(32px,5vw,57px) Georgia,serif}.stats span{font-size:14px}section{margin:0 0 50px}article{border-top:1px solid var(--line);padding:16px 0}article h3,summary strong{font-size:21px}h3{margin:6px 0}article p{margin:8px 0 16px}details{border-top:1px solid var(--line);padding:16px 0}summary{cursor:pointer}summary time{display:block;margin-left:21px}details p{max-width:760px;margin-left:21px}footer{padding-top:20px;padding-bottom:26px;border-top:1px solid var(--line)}:focus-visible{outline:3px solid currentColor;outline-offset:4px}@media(max-width:620px){.projects{grid-template-columns:1fr;gap:0}nav div{gap:10px}.hero h1{font-size:clamp(56px,15vw,88px)}}
-</style></head><body><header><nav aria-label="Main"><strong>dm.</strong><div><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="https://www.linkedin.com/in/dpbeing/">LinkedIn ↗</a></div></nav></header><main>
-<div class="hero"><span class="small">SENIOR DATA ENGINEER · SYDNEY</span><h1>Deep Mehta</h1><p>I build data platforms and AI tools that let people follow the evidence, from a corporate ownership link to a change in weekly rent.</p><div class="links"><a class="button" href="Deep_Mehta_Resume.pdf" download>Download resume ↓</a><a href="https://github.com/dpbeing">GitHub ↗</a></div></div>
-<section class="feature"><span class="small">REVENUE NSW · SELECTED WORK</span><h2>Who controlled this business?</h2><p>Ownership changes over time. I built a LangGraph search workflow that lets auditors retrieve seven financial years of group membership history in minutes. Amazon Neptune and Gremlin make the ownership and control paths traceable.</p><div class="stats"><div><b>~712k</b><span>nodes in the grouping graph</span></div><div><b>~624k</b><span>relationships modelled</span></div></div></section>
-<section id="projects"><h2>Independent projects</h2><div class="projects"><article><span class="small">LLM TOOL CALLING · DUCKDB</span><h3>NSW rental insights</h3><p>Ask how four-bedroom rents changed in postcode 2570. Python tools calculate the answer from NSW rental bond data, with 322,307 lodgements in the 2025 dataset.</p><a href="https://nsw-open-data-agent.streamlit.app/">Try the rental agent ↗</a></article><article><span class="small">REAL-TIME DATA · GTFS</span><h3>Sydney rail delays</h3><p>Which lines are running at least two minutes late? The agent joins live trip updates with station and route names to answer in the terms a passenger uses.</p></article></div></section>
-<section id="experience"><h2>Experience</h2>
-<details open><summary><strong>Revenue NSW · Senior Data Engineer</strong><time>Jul 2024 – Present</time></summary><p>Built and maintained 200+ ETL jobs. Used Splink to link records across systems and test-driven development to verify historical grouping rules.</p></details>
-<details><summary><strong>Cognizant · Solution Engineer</strong><time>Jun 2021 – Feb 2024</time></summary><p>Led delivery across 5+ Azure projects for Westpac. Reusable Python libraries reduced repeat work and contributed to a 20% reduction in project costs.</p></details>
-<details><summary><strong>Infosys · Technology Analyst</strong><time>Aug 2018 – Jun 2021</time></summary><p>Led onshore delivery for Westpac, turning business rules into Spark transformations and contributing to the Unsecured Loans programme.</p></details>
-<details><summary><strong>Infosys · Senior Systems Engineer</strong><time>Oct 2015 – Jul 2018</time></summary><p>Delivered anti-money-laundering technology for HSBC Correspondent Banking, supporting suspicious-transaction monitoring and regulatory reporting across markets.</p></details></section>
-</main><footer><span>Deep Mehta</span><a href="https://www.linkedin.com/in/dpbeing/">Contact on LinkedIn ↗</a></footer></body></html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Deep Mehta — Data &amp; AI Engineering</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Main">
+        <strong>dm.</strong>
+        <div>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="https://www.linkedin.com/in/dpbeing/">LinkedIn ↗</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Edit: Introduction and resume download -->
+      <div class="hero">
+        <span class="small">SENIOR DATA ENGINEER · SYDNEY</span>
+        <h1>Deep Mehta</h1>
+        <p>I build data platforms and AI tools that let people follow the evidence, from a corporate ownership link to a change in weekly rent.</p>
+        <div class="links">
+          <a class="button" href="Deep_Mehta_Resume.pdf" download>Download resume ↓</a>
+          <a href="https://github.com/databydeep">GitHub ↗</a>
+        </div>
+      </div>
+      <!-- Edit: Who controlled this business? -->
+      <section class="feature">
+        <span class="small">REVENUE NSW · SELECTED WORK</span>
+        <h2>One search to investigate a business group</h2>
+        <p>I built a secure generative AI dashboard that replaces roughly 5–10 manual SQL queries per investigation with one ABN or ACN search. The target was an 80%+ reduction in investigation effort by automating data joins and graph tracing.</p>
+        <p>Auditors can explore the network around a business, trace ownership paths in Amazon Neptune and ask follow-up questions in context. A LangGraph workflow retrieves seven financial years of group history in minutes, and a one-click comparison shows which businesses joined between financial-year snapshots.</p>
+        <p>I restricted the dashboard to allow-listed intents and sanitised requests before sending them to Amazon Bedrock.</p>
+        <div class="stats">
+          <div>
+            <b>~712k</b>
+            <span>nodes in the grouping graph</span>
+          </div>
+          <div>
+            <b>~624k</b>
+            <span>relationships modelled</span>
+          </div>
+        </div>
+      </section>
+      <!-- Edit: Independent projects -->
+      <section id="projects">
+        <h2>Independent projects</h2>
+        <div class="projects">
+          <article>
+            <span class="small">LLM TOOL CALLING · DUCKDB</span>
+            <h3>NSW rental insights</h3>
+            <p>Ask how four-bedroom rents changed in postcode 2570. Python tools calculate the answer from NSW rental bond data, with 322,307 lodgements in the 2025 dataset.</p>
+            <a href="https://nsw-open-data-agent.streamlit.app/">Try the rental agent ↗</a>
+          </article>
+          <article>
+            <span class="small">REAL-TIME DATA · GTFS</span>
+            <h3>Sydney rail delays</h3>
+            <p>Which lines are running at least two minutes late? The agent joins live trip updates with station and route names to answer in the terms a passenger uses.</p>
+          </article>
+        </div>
+      </section>
+      <!-- Edit: Experience -->
+      <section id="experience">
+        <h2>Experience</h2>
+        <details open>
+          <summary>
+            <strong>Revenue NSW · Senior Data Engineer</strong>
+            <time>Jul 2024 – Present</time>
+          </summary>
+          <p>Built and maintained 200+ ETL jobs. Used Splink to link records across systems and test-driven development to verify historical grouping rules.</p>
+        </details>
+        <details>
+          <summary>
+            <strong>Cognizant · Solution Engineer</strong>
+            <time>Jun 2021 – Feb 2024</time>
+          </summary>
+          <p>Led delivery across 5+ Azure projects for Westpac. Reusable Python libraries reduced repeat work and contributed to a 20% reduction in project costs.</p>
+        </details>
+        <details>
+          <summary>
+            <strong>Infosys · Technology Analyst</strong>
+            <time>Aug 2018 – Jun 2021</time>
+          </summary>
+          <p>Led onshore delivery for Westpac, turning business rules into Spark transformations and contributing to the Unsecured Loans programme.</p>
+        </details>
+        <details>
+          <summary>
+            <strong>Infosys · Senior Systems Engineer</strong>
+            <time>Oct 2015 – Jul 2018</time>
+          </summary>
+          <p>Delivered anti-money-laundering technology for HSBC Correspondent Banking, supporting suspicious-transaction monitoring and regulatory reporting across markets.</p>
+        </details>
+      </section>
+    </main>
+    <footer>
+      <span>Deep Mehta</span>
+      <a href="https://www.linkedin.com/in/dpbeing/">Contact on LinkedIn ↗</a>
+    </footer>
+  </body>
+</html>
