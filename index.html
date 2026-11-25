@@ -20,30 +20,29 @@
     <main>
       <!-- Edit: Introduction and resume download -->
       <div class="hero">
-        <span class="small">SENIOR DATA ENGINEER · SYDNEY</span>
-        <h1>Deep Mehta</h1>
-        <p>I build data platforms and AI tools that let people follow the evidence, from a corporate ownership link to a change in weekly rent.</p>
-        <div class="links">
-          <a class="button" href="Deep_Mehta_Resume.pdf" download>Download resume ↓</a>
-          <a href="https://github.com/databydeep">GitHub ↗</a>
+        <div class="intro">
+          <span class="small">SENIOR DATA ENGINEER · SYDNEY</span>
+          <h1>Deep Mehta</h1>
+          <p>At Revenue NSW, I build the data pipelines and AI tools auditors use to investigate corporate groups. With one business number, they can now trace ownership and see seven years of group history in minutes.</p>
+          <div class="links">
+            <a class="button" href="Deep_Mehta_Resume.pdf" download>Download resume ↓</a>
+            <a href="https://github.com/databydeep">GitHub ↗</a>
+          </div>
         </div>
+        <aside aria-label="Scale of my work at Revenue NSW">
+          <div><strong>200+</strong><span>ETL jobs built and maintained</span></div>
+          <div><strong>~712k</strong><span>nodes in the grouping graph</span></div>
+          <div><strong>~624k</strong><span>relationships modelled</span></div>
+        </aside>
       </div>
       <!-- Edit: Who controlled this business? -->
       <section class="feature">
         <span class="small">REVENUE NSW · SELECTED WORK</span>
-        <h2>One search to investigate a business group</h2>
-        <p>I built a secure generative AI dashboard that replaces roughly 5–10 manual SQL queries per investigation with one ABN or ACN search. The target was an 80%+ reduction in investigation effort by automating data joins and graph tracing.</p>
-        <p>Auditors can explore the network around a business, trace ownership paths in Amazon Neptune and ask follow-up questions in context. A LangGraph workflow retrieves seven financial years of group history in minutes, and a one-click comparison shows which businesses joined between financial-year snapshots.</p>
-        <p>I restricted the dashboard to allow-listed intents and sanitised requests before sending them to Amazon Bedrock.</p>
-        <div class="stats">
-          <div>
-            <b>~712k</b>
-            <span>nodes in the grouping graph</span>
-          </div>
-          <div>
-            <b>~624k</b>
-            <span>relationships modelled</span>
-          </div>
+        <h2>From 5–10 SQL queries to one business search</h2>
+        <div class="case-body">
+          <p>Auditors used to join records and trace ownership by running roughly 5–10 SQL queries per investigation. I built a dashboard that starts with an ABN or ACN and brings those steps into one workflow.</p>
+          <p>LangGraph retrieves historical group records. Amazon Neptune exposes ownership paths. Auditors can ask follow-up questions and see, in one click, which businesses joined a group between financial years.</p>
+          <p>I restricted the dashboard to allow-listed intents and sanitised requests before sending them to Amazon Bedrock. The project targets an 80%+ reduction in investigation effort.</p>
         </div>
       </section>
       <!-- Edit: Independent projects -->
