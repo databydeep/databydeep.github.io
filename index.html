@@ -23,7 +23,7 @@
         <div class="intro">
           <span class="small">SENIOR DATA ENGINEER · SYDNEY</span>
           <h1>Deep Mehta</h1>
-          <p>At Revenue NSW, I build the data pipelines and AI tools auditors use to investigate corporate groups. With one business number, they can now trace ownership and see seven years of group history in minutes.</p>
+          <p>I build data platforms and AI tools for investigations. At Revenue NSW, I brought seven years of corporate ownership history into one search. In my independent work, I build agents whose answers can be checked against the original evidence.</p>
           <div class="links">
             <a class="button" href="Deep_Mehta_Resume.pdf" download>Download resume ↓</a>
             <a href="https://github.com/databydeep">GitHub ↗</a>
@@ -48,11 +48,18 @@
       <!-- Edit: Independent projects -->
       <section id="projects">
         <h2>Independent projects</h2>
+        <article class="feature">
+          <span class="small">PYTHON · GITHUB ACTIONS · PYTORCH · HUGGING FACE</span>
+          <h3>CI Failure Investigator</h3>
+          <p>One pytest build left 22 failed jobs. I grouped them into three failed-step names and linked each job to its original evidence. Explore 387 jobs from 10 public runs across five projects, or load the latest failed run.</p>
+          <p>I tested a LoRA-tuned model on 15 held-out routing questions. Its score fell from 5 to 3 correct, so the API blocks that adapter from serving requests.</p>
+          <a href="ci-investigator/">Investigate a failed build ↗</a>
+        </article>
         <div class="projects">
           <article>
             <span class="small">LLM TOOL CALLING · DUCKDB</span>
             <h3>NSW rental insights</h3>
-            <p>Ask how four-bedroom rents changed in postcode 2570. Python tools calculate the answer from NSW rental bond data, with 322,307 lodgements in the 2025 dataset.</p>
+            <p>Explore postcode-level rent trends with a tool-calling agent and DuckDB.</p>
             <a href="https://nsw-open-data-agent.streamlit.app/">Try the rental agent ↗</a>
           </article>
           <article>

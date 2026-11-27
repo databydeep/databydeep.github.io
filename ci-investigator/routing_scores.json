@@ -1,0 +1,49 @@
+{
+  "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+  "seed": 41,
+  "train": 36,
+  "epochs": 3,
+  "base": {
+    "correct": 5,
+    "total": 15,
+    "predictions": [
+      "failures",
+      "failures",
+      "failures",
+      "failures",
+      "failures",
+      "failures",
+      "failures",
+      "failures",
+      "failures",
+      "failures",
+      "failures",
+      "failures",
+      "failures",
+      "failures",
+      "failures"
+    ]
+  },
+  "tuned": {
+    "correct": 3,
+    "total": 15,
+    "predictions": [
+      "unknown",
+      "matrix",
+      "unknown",
+      "failures",
+      "unknown",
+      "failures",
+      "failures",
+      "failures",
+      "unknown",
+      "failures",
+      "unknown",
+      "failures",
+      "unknown",
+      "failures",
+      "failures"
+    ]
+  }
+}

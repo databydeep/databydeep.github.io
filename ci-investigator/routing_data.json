@@ -1,0 +1,14 @@
+{
+  "failures": {
+    "train": ["Which steps failed?","Show failed checks","List the failing jobs","Where can I see the red jobs?","Which task returned a failure?","Find broken steps","What went wrong in this workflow?","Show links to failed steps","Identify the job that failed","Which checks should I inspect?","Give me the failed action names","Show the failed build evidence"],
+    "test": ["What turned the build red?","Take me to the broken job","Which step should the on-call engineer open?","Give me the failure list","Find errors in this run"]
+  },
+  "matrix": {
+    "train": ["Which failures repeat?","Group identical failed steps","Do multiple jobs fail at the same step?","Summarise the matrix fan-out","Collapse repeated failures","Which step appears most often?","Find shared failures across platforms","Are the Windows and Linux failures similar?","Group common failing checks","Count jobs per failed step","What failed across several runners?","Cluster matching step names"],
+    "test": ["Are all these red jobs pointing to one check?","How many runners hit each error?","Show repeated symptoms","Which failures overlap across platforms?","Deduplicate this matrix"]
+  },
+  "unknown": {
+    "train": ["Where is evidence missing?","List jobs with no failed step","Which conclusions need more logs?","Show inconclusive checks","Which failures lack step details?","What cannot be diagnosed from metadata?","Show jobs that need deeper evidence","Find failed jobs without a step name","What is unknown?","Which jobs have incomplete evidence?","Where should I request the logs?","Find cases with missing diagnostics"],
+    "test": ["Which failures have no details attached?","Show gaps in observability","Can we tell where every job stopped?","List the blind spots","Where do we lack step-level evidence?"]
+  }
+}
